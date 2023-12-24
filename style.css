@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-juego{
+    height:100vh;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    text-align: center;
+
+}
+
+.nombre-juego, .info-juego{
+    text-align: center;
+}
+
+.cuadrillas{
+   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:0;
+}
+
+.cuadros{
+    width:5rem;
+    height: 5rem;
+    border: 1px solid rgb(168, 168, 168);
+    text-align: center;
+    color:rgb(94, 7, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: background-color ease-in 0.2s;
+}
+
+.cuadros:hover{
+   
+    background-color:#cccc;
+    
+}
+
+.juego-boton{
+    display:inline-flex;
+    padding: 1rem 1rem;
+    background:blue ;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    font-weight: bold;
+    transition:color ease-out 0.3s;
+    border-radius: 50%;
+   
+}
+
+.juego-boton:hover{
+  
+    background:white ;
+    color: red;
+    border: 1px solid red;
+   
+}
